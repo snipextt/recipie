@@ -179,7 +179,7 @@ function Reciepie() {
       navigate("/login");
     }
     getRecipies();
-  }, []);
+  }, [navigate, getRecipies]);
   return (
     <div
       style={{
