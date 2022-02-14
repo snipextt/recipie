@@ -177,8 +177,9 @@ function Reciepie() {
   useEffect(() => {
     if (!sessionStorage.getItem("token")) {
       navigate("/login");
+    } else {
+      getRecipies();
     }
-    getRecipies();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
